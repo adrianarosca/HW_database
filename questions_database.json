@@ -1,0 +1,169 @@
+{
+    "questions": [
+        {
+            "category": "Arts & Literature",
+            "id": "01",
+            "a": "Little Red Riding Hood",
+            "b": "Hey Diddle Diddle",
+            "c": "Mary Had a Little Lamb",
+            "d": "Baa Baa Black Sheep",
+            "correctAnswer": "a",
+            "question": "What nursery rhyme is about a girl who went to the woods?",
+            "difficulty": "easy"
+        },
+        {
+            "category": "Arts & Literature",
+            "id": "02",
+            "a": "Christopher Tolkien",
+            "b": "Philip Pullman",
+            "c": "C. S. Lewis",
+            "d": "J. K. Rowling",
+            "correctAnswer": "d",
+            "question": "Which author wrote 'Harry Potter and the Cursed Child'?",
+            "difficulty": "easy"
+        },
+        {
+            "category": "Arts & Literature",
+            "id": "03",
+            "a": "C. S. Lewis",
+            "b": "Neil Gaiman",
+            "c": "Jack Vance",
+            "d": "Douglas Adams",
+            "correctAnswer": "a",
+            "question": "Which author wrote 'The Chronicles of Narnia'?",
+            "difficulty": "easy"
+        },
+        {
+            "category": "Arts & Literature",
+            "id": "04",
+            "a": "Watercolor",
+            "b": "Collage",
+            "c": "Sculpture",
+            "d": "Pointilism",
+            "correctAnswer": "b",
+            "question": "What is the word for a composition made of cut and pasted pieces of materials?",
+            "difficulty": "easy"
+        },
+        {
+            "category": "Arts & Literature",
+            "id": "05",
+            "a": "G. K. Chesterton",
+            "b": "J. R. R. Tolkien",
+            "c": "Philip Pullman",
+            "d": "C. S. Lewis",
+            "correctAnswer": "b",
+            "question": "Which author wrote 'The Hobbit'?",
+            "difficulty": "easy"
+        },
+        {
+            "category": "Arts & Literature",
+            "id": "06",
+            "a": "The Great Gatsby",
+            "b": "Eine Geschichte des Universums in 100 Sternen",
+            "c": "Madame Bovary",
+            "d": "Romeo and Juliet",
+            "correctAnswer": "d",
+            "question": "Which piece of written work starts with the line 'Two households, both alike in dignity, in fair Verona, where we lay our scene, from ancient grudge break to new mutiny, where civil blood makes civil hands unclean.'?",
+            "difficulty": "easy"
+        },
+        {
+            "category": "Arts & Literature",
+            "id": "07",
+            "a": "G. K. Chesterton",
+            "b": "Philip Pullman",
+            "c": "C. S. Lewis",
+            "d": "J. R. R. Tolkien",
+            "correctAnswer": "d",
+            "question": "Which author wrote 'The Lord of the Rings'?",
+            "difficulty": "easy"
+        },
+        {
+            "category": "Arts & Literature",
+            "id": "08",
+            "a": "H. P. Lovecraft",
+            "b": "Stephen King",
+            "c": "Edgar Allan Poe",
+            "d": "Jack Vance",
+            "correctAnswer": "b",
+            "question": "Which author wrote 'The Shining'?",
+            "difficulty": "easy"
+        },
+        {
+            "category": "Arts & Literature",
+            "id": "09",
+            "a": "Harry Potter",
+            "b": "Twilight",
+            "c": "Percy Jackson & the Olympians",
+            "d": "Voyages Extraordinaires",
+            "correctAnswer": "a",
+            "question": "In which book series does 'Severus Snape' appear?",
+            "difficulty": "easy"
+        },
+        {
+            "category": "Arts & Literature",
+            "id": "10",
+            "a": "Life, the Universe and Everything",
+            "b": "The Two Towers",
+            "c": "A Connecticut Yankee in King Arthur's Court",
+            "d": "The Mysterious Island",
+            "correctAnswer": "b",
+            "question": "Which piece of written work starts with the line 'Aragorn sped on up the hill.'?",
+            "difficulty": "easy"
+        },
+        {
+            "category": "Arts & Literature",
+            "id": "11",
+            "a": "A pitcher",
+            "b": "A square",
+            "c": "An eisel",
+            "d": "A Palette",
+            "correctAnswer": "d",
+            "question": "What is the word given to a flat board used by a painter to mix and hold colors?",
+            "difficulty": "easy"
+        },
+        {
+            "category": "Arts & Literature",
+            "id": "12",
+            "a": "Divergent",
+            "b": "Twilight",
+            "c": "Harry Potter",
+            "d": "Percy Jackson & the Olympians",
+            "correctAnswer": "c",
+            "question": "In which book series does 'Ron Weasley' appear?",
+            "difficulty": "easy"
+        },
+        {
+            "category": "Arts & Literature",
+            "id": "13",
+            "a": "Hamlet",
+            "b": "King Lear",
+            "c": "Romeo and Juliet",
+            "d": "Othello",
+            "correctAnswer": "c",
+            "question": "What shakespearean play features the line: \"A plague on both your houses\"?",
+            "difficulty": "easy"
+        },
+        {
+            "category": "Arts & Literature",
+            "id": "14",
+            "a": "The Chronicles of Narnia",
+            "b": "Percy Jackson & the Olympians",
+            "c": "Divergent",
+            "d": "The Hunger Games",
+            "correctAnswer": "a",
+            "question": "In which book series would you find the character of 'Aslan'?",
+            "difficulty": "easy"
+        },
+        {
+            "category": "Arts & Literature",
+            "id": "15",
+            "a": "C. S. Lewis",
+            "b": "Philip Pullman",
+            "c": "G. K. Chesterton",
+            "d": "J. R. R. Tolkien",
+            "correctAnswer": "d",
+            "question": "Which author wrote 'The History of Middle-earth'?",
+            "difficulty": "easy"
+        }
+    ]
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="quiz">
+    <meta name="keywords" content="quiz, questions, game">
+
+</head>
+
+<body>
+    <fieldset>
+
+        <form method="put">
+
+            <label>Email:</label>
+            <input id="email" type="email">
+
+            <label>First Name:</label>
+            <input type="text" id="firstName">;
+
+            <label>Last Name:</label>
+            <input type="text" id="lastName">;
+
+            <button type="button" id="checkEmail" onclick="verifEmail()">CHECK EMAIL</button>
+
+            <label style="visibility:hidden" id="newPasswordLabel">New Password:</label>
+            <input type="password" id="newPassword" style="visibility:hidden">
+
+            <label style="visibility:hidden" id="confirmNewPasswordLabel">Confirm New Password:</label>
+            <input type="password" id="confirmNewPassword" style="visibility:hidden">
+
+            <button id="changePass" type="button" style="visibility:hidden" onclick="updatePass()">CHANGE
+                PASSWORD</button>
+
+        </form>
+    </fieldset>
+    <p id="ex">hello</p>
+
+    <script>
+        const apiURLUsers = "http://localhost:3000/users";
+
+        function verifEmail() {
+            const userEmail = document.getElementById("email").value;
+
+            const xmlHttp = new XMLHttpRequest();
+
+            xmlHttp.onreadystatechange = function () {
+
+                if (this.readyState == XMLHttpRequest.DONE && this.status == 200) {
+                    let sir = JSON.parse(this.responseText);
+                    for(let i=0; i<11; i++)
+                    {
+                        if(sir[i].id==userEmail)
+                        {
+                            document.getElementById("checkEmail").style.visibility = "hidden"
+                            document.getElementById("checkEmail").setAttribute("display", "none");
+                            document.getElementById("newPassword").style.visibility = "initial";
+                            document.getElementById("newPasswordLabel").style.visibility = "initial";
+                            document.getElementById("confirmNewPassword").style.visibility = "initial";
+                            document.getElementById("confirmNewPasswordLabel").style.visibility = "initial";
+                            document.getElementById("changePass").style.visibility = "initial";
+                        }
+                    }
+                   
+                }
+            }
+
+        xmlHttp.open("GET", apiURLUsers);
+        xmlHttp.send();
+            
+        }
+
+        function updatePass() {
+            const existingUser = {};
+            existingUser.id = document.getElementById("email").value;
+            existingUser.email = document.getElementById("email").value;
+            existingUser.firstName = document.getElementById("firstName").value;
+            existingUser.lastName = document.getElementById("lastName").value;
+            const newPassword = document.getElementById("newPassword").value;
+            const newPasswordConfirm = document.getElementById("confirmNewPassword").value;
+
+            if (newPassword === newPasswordConfirm) {
+
+                const xmlHttp = new XMLHttpRequest();
+                existingUser.password = newPassword;
+                xmlHttp.onreadystatechange = function () {
+                    if (this.readyState == XMLHttpRequest.DONE && this.status == 200) {
+                        console.log(this.responseText);
+                    }
+                }
+
+                xmlHttp.open("PUT", `${apiURLUsers}/${existingUser.id}`, true);
+
+                xmlHttp.setRequestHeader('Content-type', 'application/json');
+
+                xmlHttp.send(JSON.stringify(existingUser));
+            }
+        }
+
+
+
+    </script>
+
+</body>

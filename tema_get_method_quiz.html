@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="quiz">
+    <meta name="keywords" content="quiz, questions, game">
+
+</head>
+
+<body>
+    <fieldset>
+        <p id="quizQuestion"></p>
+        <form>
+            <input type="radio" id="answerA">
+            <label id="labelAnswerA"></label>
+
+            <br>
+
+            <input type="radio" id="answerB">
+            <label id="labelAnswerB"></label>
+
+            <br>
+
+            <input type="radio" id="answerC">
+            <label id="labelAnswerC"></label>
+
+            <br>
+
+            <input type="radio" id="answerD">
+            <label id="labelAnswerD"></label>
+
+        </form>
+
+        <button id="startQ">SUBMIT ANSWER</button>
+    </fieldset>
+</body>
+
+<script>
+    const apiURLQuestions = "http://localhost:3000/questions";
+
+    let quizQuestion = document.getElementById("quizQuestion");
+    let answerA = document.getElementById("labelAnswerA");
+    let answerB = document.getElementById("labelAnswerB");
+    let answerC = document.getElementById("labelAnswerC");
+    let answerD = document.getElementById("labelAnswerD");
+
+    let index = 0;
+
+    function loadNewQ() {
+        const xmlHttp = new XMLHttpRequest();
+        xmlHttp.onreadystatechange = function () {
+
+            if (this.readyState == XMLHttpRequest.DONE && this.status == 200) {
+                const sir = JSON.parse(this.responseText);
+                quizQuestion.innerText = sir[index].question;
+                answerA.innerText = sir[index].a;
+                answerB.innerText = sir[index].b;
+                answerC.innerText = sir[index].c;
+                answerD.innerText = sir[index].d;
+            }
+        }
+        xmlHttp.open("GET", apiURLQuestions);
+        xmlHttp.send();
+        index++;
+    }
+
+    const submitButton = document.getElementById("startQ");
+    submitButton.addEventListener("click", loadNewQ);
+   
+</script>

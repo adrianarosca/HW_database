@@ -1,0 +1,81 @@
+{
+  "users": [
+    {
+      "id": "alexandrapopescu@yahoo.com",
+      "email": "alexandrapopescu@yahoo.com",
+      "password": "72a1#s&T",
+      "firstName": "Alexandra",
+      "lastName": "Popescu"
+    },
+    {
+      "id": "cristi.a@gmail.com",
+      "email": "cristi.a@gmail.com",
+      "password": "bP514#to",
+      "firstName": "Alexandra",
+      "lastName": "Popescu"
+    },
+    {
+      "id": "ana_maria_ionescu@yahoo.com",
+      "email": "ana_maria_ionescu@yahoo.com",
+      "password": "QbO8*484",
+      "firstName": "Ana Maria",
+      "lastName": "Ionescu"
+    },
+    {
+      "id": "ion_alin@yahoo.com",
+      "email": "ion_alin@yahoo.com",
+      "password": "v9!Sf79&",
+      "firstName": "Alin Ion",
+      "lastName": "Alexandrescu"
+    },
+    {
+      "id": "monicaturcu@hotmail.com",
+      "email": "monicaturcu@hotmail.com",
+      "password": "09wO@r93",
+      "firstName": "Monica",
+      "lastName": "Turcu"
+    },
+    {
+      "id": "ionel.ionel@gmail.com",
+      "email": "ionel.ionel@gmail.com",
+      "password": "8e$w!82U",
+      "firstName": "Ionel",
+      "lastName": "Ania"
+    },
+    {
+      "id": "irina_dor@yahoo.com",
+      "email": "irina_dor@yahoo.com",
+      "password": "8tK*22o3",
+      "firstName": "Irina",
+      "lastName": "Dorescu"
+    },
+    {
+      "id": "alex_alexandru@yahoo.com",
+      "email": "alex_alexandru@yahoo.com",
+      "password": "o9r9$I5k",
+      "firstName": "Alex",
+      "lastName": "Davidescu"
+    },
+    {
+      "id": "cristina_criss@ygmail.com",
+      "email": "cristina_criss@ygmail.com",
+      "password": "2aWy6#6a",
+      "firstName": "Cristina",
+      "lastName": "Matei"
+    },
+    {
+      "id": "florentina.v@hotmail.com",
+      "email": "florentina.v@hotmail.com",
+      "password": "6VhoK3@7",
+      "firstName": "Florentina",
+      "lastName": "Viorica"
+    },
+    {
+       "id": "lola_lolita@gmail.com",
+      "email": "lola_lolita@gmail.com",
+      "password": "qwerty99",
+      "firstName": "Lola",
+      "lastName": "Von B"
+    }
+  ]
+}
